@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="DnB"
-run/main_scene="uid://mimq3ktvys72"
+run/main_scene="uid://d0202gy44ntti"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="uid://dy0eje8ys52ev"
 
