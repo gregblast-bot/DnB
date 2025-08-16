@@ -10,11 +10,12 @@ var y_pos
 func _ready():
 	screen_size = get_viewport_rect().size
 	x_pos = get_viewport_rect().size.x
-	y_pos = get_viewport_rect().size.y - 100
+	y_pos = get_viewport_rect().size.y - 50
 	position = Vector2(x_pos/2, y_pos)
-
+		
 func _physics_process(delta):
 	# Set direction based on whether lauch is initiated
-	#if Input.get("launch")
-	direction = Vector2(0, 100)
-	apply_force(direction)
+	if Input.is_action_just_pressed("launch"):
+		# Apply an impulse to make the body jump
+		direction = Vector2(0, 100)
+		apply_central_impulse(direction)
