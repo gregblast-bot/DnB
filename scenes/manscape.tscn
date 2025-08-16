@@ -4,8 +4,20 @@
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nxkca"]
 
-[node name="Manscape" type="Area2D"]
+[node name="Manscape" type="Node2D"]
 script = ExtResource("1_2u1fw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Top_StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Top_CollisionShape2D" type="CollisionShape2D" parent="Top_StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_nxkca")
+
+[node name="Left_StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Left_CollisionShape2D" type="CollisionShape2D" parent="Left_StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_nxkca")
+
+[node name="Right_StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Right_CollisionShape2D" type="CollisionShape2D" parent="Right_StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_nxkca")
