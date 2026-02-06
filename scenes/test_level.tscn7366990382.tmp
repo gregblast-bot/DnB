@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://mimq3ktvys72" path="res://scenes/platty.tscn" id="2_x4b8f"]
 [ext_resource type="PackedScene" uid="uid://do5kxh8qfek4k" path="res://scenes/ball.tscn" id="3_tmr53"]
 
-[node name="Test Level" type="Node"]
+[node name="Test Level 1" type="Node"]
 
 [node name="Manscape" parent="." instance=ExtResource("1_j6w7d")]
 
